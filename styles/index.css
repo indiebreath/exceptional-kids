@@ -1,0 +1,70 @@
+@import "global.css";
+
+html {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/*Header CSS*/
+#upper-display {
+  display: flex;
+  justify-content: center;
+}
+
+/*Navbar CSS*/
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+}
+
+#home {
+  float: left !important;
+  margin-right: 30px;
+  padding: 0;
+}
+
+#home a {
+  top: 1px !important;
+}
+
+#home img {
+  margin-right: 5px;
+  margin-bottom: -2px;
+  padding: 0;
+}
+
+#navbar li a {
+  display: block;
+  height: 100%;
+  color: var(--text-color);
+  text-align: center;
+  padding: 24px 20px;
+  margin: 0;
+  text-decoration: none;
+  position: relative;
+  top: 7px;
+  margin-top: -7px;
+}
+
+#navbar li a:hover {
+  background-color: var(--secondary-color);
+}
+
+/*Main CSS*/
+#main {
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  height: 100dvh;
+}
+
+/*Footer CSS*/
+#footer p {
+  text-align: center;
+  margin: 5px;
+}
