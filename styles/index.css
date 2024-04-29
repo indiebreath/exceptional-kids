@@ -12,6 +12,7 @@ html {
 }
 
 /*Navbar CSS*/
+
 #navbar ul {
   list-style-type: none;
   margin: 0;
@@ -20,6 +21,7 @@ html {
   background-color: var(--primary-color);
   display: flex;
   justify-content: center;
+  border-radius: 10px;
 }
 
 #home {
@@ -57,14 +59,22 @@ html {
 
 /*Main CSS*/
 #main {
-  border-color: black;
-  border-width: 2px;
-  border-style: solid;
-  height: 100dvh;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#about-us, #services, #gallery, #contact {
+  margin-top: 75px;
 }
 
 /*Footer CSS*/
+#footer {
+  margin-top: 75px;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+
 #footer p {
   text-align: center;
-  margin: 5px;
 }
