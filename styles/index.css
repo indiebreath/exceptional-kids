@@ -71,13 +71,19 @@ html {
   padding-right: 100px;
 }
 
-#about-us, #services, #gallery {
+#about-us, #services {
   margin-top: 75px;
+}
+
+#about-us p {
+	padding-left: 15px;
 }
 
 #services-content {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	width: 75%;
+	margin: auto;
 }
 
 #services-content p {

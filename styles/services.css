@@ -78,20 +78,25 @@ html {
 }
 
 #main {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#services, #fees {
+  margin-top: 75px;
+}
+
+#services-content {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+
+#services-intro {
+	text-align: right;
+	padding-right: 50px;
+}
+
+#fees-content {
 	margin: auto;
-	margin-top: 20px;
-}
-
-#main img {
-	margin: auto;
-}
-
-#left-section, #right-section {
-	margin: 50px;
-}
-
-#left-section p {
-	padding-left: 15px;
+	width: 75%;
 }
