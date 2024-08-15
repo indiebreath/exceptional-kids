@@ -1,4 +1,5 @@
 @import "global.css";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 html {
   background-color: var(--background-color);
@@ -39,12 +40,22 @@ html {
 }
 
 #home a {
-  top: 1px !important;
+  font-family: "Indie Flower";
+  font-weight: 100;
+  font-size: 25px;
+}
+
+#home a img {
+  display: inline-block;
+}
+
+#home a p {
+  display: inline-block;
 }
 
 #home img {
-  margin-right: 5px;
-  margin-bottom: -4px;
+  margin-right: 10px;
+  margin-bottom: -5px;
   padding: 0;
 }
 
@@ -53,16 +64,18 @@ html {
   height: 100%;
   color: var(--text-color);
   text-align: center;
-  padding: 24px 20px;
   margin: 0;
+  padding: 12px 15px;
   text-decoration: none;
   position: relative;
-  top: 6px;
-  margin-top: -6px;
 }
 
 #navbar li a:hover {
   background-color: var(--secondary-color);
+}
+
+.not-home p {
+  padding-top: 15px;
 }
 
 /*Main CSS*/
@@ -71,7 +84,7 @@ html {
   padding-right: 100px;
 }
 
-#about-us, #services {
+#about-us {
   margin-top: 75px;
 }
 
@@ -79,22 +92,29 @@ html {
 	padding-left: 15px;
 }
 
-#services-content {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	width: 75%;
-	margin: auto;
+#about-us img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#services-content p {
-	text-align: right;
+#provided {
+  text-align: center;
 }
 
 /*Footer CSS*/
-#footer {
+#banner {
   margin-top: 75px;
+  margin-left: -5px;
+  height: 100px;
+  width: 100vw;
+  background-image: url(../images/paste.png);
+  background-size: 200px;
+}
+
+#bottom-bar {
   background-color: var(--primary-color);
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
 }
 
