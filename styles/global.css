@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 :root {
   --text-color: #050315;
   --background-color: #fff4fd;
@@ -5,4 +7,96 @@
   --secondary-color: #f9d4f8;
   --accent-color: #e354f0;
   font-family: sans-serif;
+}
+
+/*Header CSS*/
+#upper-display {
+  display: flex;
+  justify-content: center;
+}
+
+#upper-display a {
+  color: var(--text-color);
+}
+
+#upper-display a:hover {
+  color: #525252;
+}
+
+/*Navbar CSS*/
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+#home {
+  float: left !important;
+  margin-right: 30px;
+  padding: 0;
+}
+
+#home a {
+  font-family: "Indie Flower";
+  font-weight: 100;
+  font-size: 25px;
+}
+
+#home a img {
+  display: inline-block;
+}
+
+#home a p {
+  display: inline-block;
+}
+
+#home img {
+  margin-right: 10px;
+  margin-bottom: -5px;
+  padding: 0;
+}
+
+#navbar li a {
+  display: block;
+  height: 100%;
+  color: var(--text-color);
+  text-align: center;
+  margin: 0;
+  padding: 12px 15px;
+  text-decoration: none;
+  position: relative;
+}
+
+#navbar li a:hover {
+  background-color: var(--secondary-color);
+}
+
+.not-home p {
+  padding-top: 15px;
+}
+
+/*Footer CSS*/
+#banner {
+  margin-top: 75px;
+  margin-left: -5px;
+  height: 100px;
+  width: 100vw;
+  background-image: url(../images/paste.png);
+  background-size: 200px;
+}
+
+#bottom-bar {
+  background-color: var(--primary-color);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#footer p {
+  text-align: center;
 }
