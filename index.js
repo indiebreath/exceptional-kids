@@ -3,9 +3,9 @@ const app = express();
 const router = express.Router();
 const port = 3000;
 
-app.use("/", express.static(__dirname + "/source/pages"));
-app.use("/styles", express.static(__dirname + "/source/styles"));
-app.use("/images", express.static(__dirname + "/source/images"));
+app.use("/", express.static(__dirname + "/src/pages"));
+app.use("/styles", express.static(__dirname + "/src/styles"));
+app.use("/images", express.static(__dirname + "/src/images"));
 
 router.use(function (req, res, next) {
     console.log("/" + req.method);
@@ -13,15 +13,15 @@ router.use(function (req, res, next) {
 });
 
 router.get("/", function(req, res) {
-    res.sendFile(__dirname + "/source/pages/index.html");
+    res.sendFile(__dirname + "/src/pages/index.html");
 });
 
 router.get("/about", function(req, res) {
-    res.sendFile(__dirname + "/source/pages/about.html");
+    res.sendFile(__dirname + "/src/pages/about.html");
 });
 
 router.get("/services", function(req, res) {
-    res.sendFile(__dirname + "/source/pages/services.html");
+    res.sendFile(__dirname + "/src/pages/services.html");
 });
 
 app.use("/", router);
