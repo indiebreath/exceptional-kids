@@ -26,6 +26,6 @@ router.get("/services", function(req, res) {
 
 app.use("/", router);
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
     console.log("Application running and listening on port 3000.");
 });
