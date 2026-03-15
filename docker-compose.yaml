@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    networks:
+      - dokploy-network
+    deploy:
+      endpoint_mode: dnsrr
+      replicas: 1
+
+networks:
+  dokploy-network:
+    external: true
