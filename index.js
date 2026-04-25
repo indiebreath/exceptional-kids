@@ -12,20 +12,20 @@ router.use(function (req, res, next) {
     next();
 });
 
-router.get("/", function(req, res) {
+router.get("/", function (req, res) {
     res.sendFile(__dirname + "/src/pages/index.html");
 });
 
-router.get("/about", function(req, res) {
+router.get("/about", function (req, res) {
     res.sendFile(__dirname + "/src/pages/about.html");
 });
 
-router.get("/services", function(req, res) {
+router.get("/services", function (req, res) {
     res.sendFile(__dirname + "/src/pages/services.html");
 });
 
 app.use("/", router);
 
-app.listen(port, '0.0.0.0', () => {
+app.listen(port, "0.0.0.0", () => {
     console.log("Application running and listening on port 3000.");
 });

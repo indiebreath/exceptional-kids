@@ -1,14 +1,14 @@
 {
-  "name": "exceptional-kids",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "author": "indiebreath",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "express": "^4.22.1"
-  }
+    "name": "exceptional-kids",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "indiebreath",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "express": "^5.2.1"
+    }
 }
